@@ -1,0 +1,23 @@
+/* 
+css syntax
+
+selector {
+    property: value;
+}
+
+for classes use dot(.)
+for id use (#)
+
+*/
+
+h5{
+    color: brown;
+}
+
+.myH5{
+    color: yellow;
+}
+
+#h6Id{
+    color: blueviolet;
+}
