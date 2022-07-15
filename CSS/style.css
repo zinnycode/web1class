@@ -10,14 +10,128 @@ for id use (#)
 
 */
 
-h5{
-    color: brown;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.myH5{
-    color: yellow;
+a{
+    text-decoration: none;
 }
 
-#h6Id{
-    color: blueviolet;
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px; */
+
+    padding: 20px 50px;
+
+}
+
+.navlinks a{
+    color: #242d52;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.getStartedButton a{
+    color: #fff;
+    background-color: #F3603C;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+#twocolumn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 150px 50px 150px;
+    
+}
+.letter{
+    width: 40%;
+    margin-right: 13rem;
+}
+
+.letter h1 {
+    font-size: 40px;
+    color: #242d52;
+    margin-bottom: 20px;
+}
+
+.letter p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.letter a {
+    color: #fff;
+    background-color: #F3603C;
+    padding: 10px 15px;
+    border-radius: 50px;
+    
+}
+
+.rightimage img{
+    width: 80%;
+    
+}
+#secondsection{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding:  100px 100px 50px 150px;
+    
+}
+
+.letteronly{
+    width: 100%;
+    margin-right: 13rem;
+}
+
+.letteronly h1{
+    font-size: 30px;
+    color: #242d52;
+    margin-bottom: 20px;
+}
+
+.letteronly p{
+    font-size: 13px;
+    color: gray;
+    
+}
+
+.nosletters {
+    width: 100%;
+}
+
+.nosletters .p1{
+    padding: 2px 18px;
+    background-color: #F3603C;
+    color: #fff;
+    border-radius: 50px;
+
+}
+
+.nosletters h3{
+    margin-left: 10px;
+}
+
+.nosletters .p2{
+    margin-left: 4rem;
+    font-size: 12px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.pandh3{
+    display: flex;
 }
