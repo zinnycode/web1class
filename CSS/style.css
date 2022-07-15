@@ -136,53 +136,98 @@ a{
     display: flex;
 }
 
-#thirdsection{
-    display: list-item;
+#thirdsection .line1{
+display: flex;
+align-self: center;
+justify-content: space-around;
+color: #242d52;
+}
+
+.img1234{
+    display: flex;
     align-items: center;
     justify-content: space-between;
     
 }
 
-.line1{
-margin-left: 40rem;
-color: #242d52;
-margin-bottom: 4rem;
+.names{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #242d52;
 }
 
-.imgh3p img{
+.parag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #242d52;
+
+}
+
+.img1 {
+    margin-bottom: 10px;
     width: 50px;
-    margin-left: 10rem;
-    margin-bottom:22px ;
-    height: 60px;
-    
+    height: 70px;
+    margin-left: 200px;
 }
-.firsth{
-    margin-left: 9rem;
-    font-size: 15px;
-    color: #242d52;
-    margin-bottom: 22px;
-    
-    
+.img2{
+    margin-bottom: 10px;
+    width: 50px;
+    height: 70px;
+    margin-left: 200px;
 }
-.para{
-    margin-left: 9rem;
-    color: #242d52;
+.img3{
+    margin-bottom: 10px;
+    width: 50px;
+    height: 70px;
+    margin-left: 200px;
+}
+.img4{
+    margin-bottom: 10px;
+    width: 50px;
+    height: 70px;
+    margin-left: 200px;
+}
+.name1{
     font-size: 14px;
-    margin-bottom: 8rem;
-    width: 300px
+    margin-left: 190px;
+    margin-bottom: 20px;
+}
+.name2{
+    font-size: 14px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+.name3{
+    font-size: 14px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+.name4{
+    font-size: 14px;
+    margin-left: 190px;
+    margin-bottom: 20px;
+}
+.para1{
+    font-size: 12px;
+    margin-top: 30px;
+    margin-right: 13rem;
+}
+.para2{
+    font-size: 12px;  
+    margin-top: 30px;
+    margin-left: 13rem;
     
 }
-.lasth{
-    margin-left: 45rem;
-    color: #fff;
-    background-color: #F3603C;
-    padding: 2px 30px;
-    border-radius: 30px;
-    font-size: 13px;
-    width: 100px;
-    
+.para3{
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 13rem;
 
-
-
-
+}
+.para4{
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 13rem;
 }
