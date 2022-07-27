@@ -17,6 +17,12 @@ for id use (#)
     font-family: 'Poppins', sans-serif;
 }
 
+html,body{
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
 a{
     text-decoration: none;
 }
@@ -32,7 +38,6 @@ a{
     padding-left: 50px; */
 
     padding: 20px 50px;
-
 }
 
 .navlinks a{
@@ -41,10 +46,15 @@ a{
     font-weight: 600;
 }
 
+.navTogler{
+    display: none;
+}
+
 .navlinks a:hover{
     color: #727272;
 }
 
+/* ***************************************************************************** */
 .getStartedButton a{
     color: #fff;
     background-color: #F3603C;
@@ -65,6 +75,9 @@ a{
 }
 
 .letter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 40%;
     margin-right: 13rem;
 }
@@ -100,8 +113,8 @@ a{
 }
 
 .letteronly{
-    width: 100%;
-    margin-right: 13rem;
+    width: 80%;
+    margin-right: 12rem;
 }
 
 .letteronly h1{
@@ -145,13 +158,8 @@ a{
 }
 
 #thirdsection{
-    display: list-item;  
+    /* display: list-item;   */
 }
-
-
-
-
-
 
 .combinational{
     display: flex;
@@ -370,25 +378,14 @@ input[type="button"]{
         border-radius: 50px; 
         
     }
-    /* .getstarted2 {
-        text-align: center;
-        margin-left: 16rem;
-    
-    } */
     
     .rightimage img{
-        width: 100%;
-        
+        width: 100%; 
     }
 
     #secondsection{
         padding:  100px 50px 50px;
     }
-    
-    /* .letteronly{
-        width: 150%;
-        margin-right: 13rem;
-    } */
     
     .letteronly h1{
         font-size: 30px;
@@ -446,7 +443,7 @@ input[type="button"]{
 
     .boldline{
         font-size: 28px;
-        width: 70%;
+        /* width: 70%; */
     }
 
     #fifthsection{
@@ -465,9 +462,50 @@ input[type="button"]{
         width: 30%;
 
     }
+
+    #nav{
+        padding: 20px;
+    }
+    
+    .navlinks a{
+        margin: 0 10px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:768px) {
+    .getStartedButton{
+        display: none;
+    }
+
+    #nav{
+        padding: 20px 70px;
+    }
+
+    .navlinks{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -6%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 400px;
+        background: #cfcfcf;
+        border-radius: 20px;
+        gap: 10px;
+        padding: 1rem;
+        transition: .5s;
+    }
+
+    .navTogler{
+        display: block;
+    }
+
+    .xclose{
+        display: none;
+    }
+
     #twocolumn{
         padding: 50px; 
          
@@ -483,7 +521,6 @@ input[type="button"]{
     
     .letter p {
         font-size: 14px;
-        width: 80%;
         margin-bottom: 1.8rem;
     }
 
@@ -524,7 +561,7 @@ input[type="button"]{
     }
     .boldline{
         font-size: 20px;
-        width: 70%;
+        /* width: 70%; */
     }
 
     #fifthsection{
@@ -564,37 +601,41 @@ input[type="button"]{
     .rightimage img{
         align-content: center; 
     }
-    
-    .letter h1 {
+
+    .letter{
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        width: 100%;
         text-align: center;
-        font-size: 40px;
-        padding: 20px 40px 20px 40px;
-        width: 100%;
-        margin-left: 30px;
-        
-    } 
+    }
+
+    .letter h1 {
+        font-size: 35px;
+    }
+
     .letter p {
-        width: 100%;
         font-size: 16px;
         text-align: center;
-        margin-left: 30px;
-    }
-    .letter a {
-       margin-left: 12rem;
     }
 
     #secondsection{
         flex-direction: column;
+        padding: 50px 17px;
     }
+
+    .letteronly{
+        margin: auto;
+    }
+
     .letteronly h1{
         text-align: center;
         font-size: xx-large;
-        width: 110%;
     }
         .letteronly p{
             text-align: center;
             font-size: 12px;
-            margin-bottom: 4rem;
+            margin-bottom: 1.8rem;
         }
         .nosletters .p2{
             width: 100%;
@@ -615,17 +656,37 @@ input[type="button"]{
     } */
 
     #fourthsection{
-        flex-direction: column;
-       padding-bottom: 5rem;
+        display: grid;
+        place-content: center;
+        place-items: center;
+        padding-bottom: 2rem;
+        padding-top: 0;
     }
-    .boldline{
-        font-size: 30px;
-        padding: 20px 100px 20px 100px;
-        width: 100%;
+    .firstline{
+        padding: 20px 10px;
+        /* width: 100%; */
         text-align: center;
-      
     }
-    .button{
-          
+
+    .boldline{
+        text-align: center;
+        position: relative;
+        left: 10%;
     }
+}
+
+@media screen and (max-width: 375px) {
+    .letter h1, .letteronly h1 {
+        font-size: 20px;
+    }
+    .letter{
+        width: 100%;
+        padding: 0 20px;
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    .letter a {
+        margin-left: 0;
+     }
 }
